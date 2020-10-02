@@ -1,27 +1,11 @@
-Testing Theory
-==============
-
-There are two main goals of testing:
-
-1) Code Coverage: Cover every aspect of the code; run through each if statement, and possible outcome. 
-    Every line of code needs to run at least once.
-2) Efficiency: Must avoid using test sets of data that belong to the same equivalent class. 
-    You need to test different types of data entries. 
-
-There are two main strategies: 
-
-1) Test around Boundary Conditions --> acceptable or unacceptable data.
-2) Test using Extreme Conditions --> excessive data.
-
-
 Testing Log
 ===========
 
 Test #                                   Description                                     Expected                                   Results
-1 --> [Code Coverage]               [Rate:10,Type:1,Hours:30]                              [300]
-2 --> [Code Coverage]               [Rate:10,Type:1,Hours:50]                              [600]
-3 --> [Boundary Test]           [Rate:10,Type:1,Hours:39,40,41]                         [Overtime: 41]
-4 --> [Extreme Test]             [Rate:10,Type:1,Hours:30,168]                          [Hours: N/A]
+1 --> [Code Coverage]               [Rate:10,Type:1,Hours:30]                              [300]                                     [$300]
+2 --> [Code Coverage]               [Rate:10,Type:1,Hours:50]                              [600]                                     [$600]
+3 --> [Boundary Test]           [Rate:10,Type:1,Hours:39,40,41]                         [Overtime: 41]                         [Overtime: pay of $420]
+4 --> [Extreme Test]             [Rate:10,Type:1,Hours:30,168]                          [Hours: N/A]                            
 5 --> [Boundary Test]          [Rate:6.49,6.5,30.5,30.51,Type:1:Hours:10]             [Rate only set for #2,#3]
 6 --> [Boundary Test]            [Rate:10,Type:2,Hours:0,1,60,61]                    [Hours only set for #2,#3]
 7 --> [Boundary Test]            [Rate:10,Type:0,1,2,3,Hours:45]     [Type only set for #2,#3][Overtime for type 1 and not 2]
