@@ -10,17 +10,17 @@ public class GuessMachine {
         this.number = (int) (Math.random() * 100 + 1);
     }
     
-    public int getGuesses() {
+    public int getGuesses() { // "getNumGuesses"
         return numGuesses;
     }
     
-    public boolean guessNumber(int number) {
+    public boolean guessNumber(int number) { // "setGuess"
         boolean isNumber = (number == this.number);
         this.numGuesses = this.numGuesses + 1;
         return isNumber;
     }
     
-    public String getResult(int number) {
+    public String getResult(int number) { // "giveHint"
         boolean isNumber = (number == this.number);
         if(isNumber) 
             return "You've guessed the number!\nYou guessed " + this.number + " after " + numGuesses + " guesses!";
